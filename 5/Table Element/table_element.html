@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Tabel Element</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            border: 1px black solid;
+            width: 40%;
+        }
+        th td {
+            padding: 10px 20px;
+            border: 1px black solid;
+        }
+        th {
+            background-color: #87f97b;
+        }
+        tr:nth-child(even) {
+            background-color: #ededed;
+        }
+        tr:nth-child(odd) {
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h3>Sebuah Tabel</h3>
+    <table>
+        <caption>Tabel Pinjaman Peserta</caption>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Alamat</th>
+                <th>Pinjaman</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total</td>
+                <td>6.000.000</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>Gilang Suryana</td>
+                <td>Jl.Kemerdekaan No.20</td>
+                <td>1.500.000</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Richard Baihaki</td>
+                <td>Jl.Pemuda No.43</td>
+                <td>1.500.000</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Andi Sujatmiko</td>
+                <td>Jl.Larangan No.90</td>
+                <td>1.000.000</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>Muhammad Rizky</td>
+                <td>Jl.Damai No.65</td>
+                <td>2.000.000</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
